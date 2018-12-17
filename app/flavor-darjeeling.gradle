@@ -1,0 +1,17 @@
+android {
+    signingConfigs {
+        release {
+            storeFile file("./src/darjeeling_prd/keystore/darjeeling-prd.keystore")
+            storePassword System.getenv("darStorePass")
+            keyAlias System.getenv("darKeyAlias")
+            keyPassword System.getenv("darKeyPass")
+        }
+    }
+
+    productFlavors {
+        darjeeling_prd {
+            applicationIdSuffix "darjeeling.prd"
+            signingConfig signingConfigs.release
+        }
+    }
+}
