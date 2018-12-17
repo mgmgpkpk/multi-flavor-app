@@ -1,0 +1,17 @@
+# Intellij project files
+*.iws
+*.iml
+/.idea
+
+# OS
+.DS_Store
+
+# project
+.gradle
+local.properties
+build
+*/build
+/releaseAPK
+captures
+*.apk
+*.json
