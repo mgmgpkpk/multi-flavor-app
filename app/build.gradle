@@ -3,6 +3,9 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
+apply from: 'flavor-darjeeling.gradle'
+apply from: 'flavor-assam.gradle'
+
 android {
     compileSdkVersion 28
     dataBinding.enabled = true
@@ -22,6 +25,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    flavorDimensions "default"
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'

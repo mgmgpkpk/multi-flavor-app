@@ -1,0 +1,17 @@
+android {
+    signingConfigs {
+        release {
+            storeFile file("./src/assam_prd/keystore/assam-prd.keystore")
+            storePassword System.getenv("asmStorePass")
+            keyAlias System.getenv("asmKeyAlias")
+            keyPassword System.getenv("asmKeyPass")
+        }
+    }
+
+    productFlavors {
+        assam_prd {
+            applicationIdSuffix ".assam.prd"
+            signingConfig signingConfigs.release
+        }
+    }
+}
