@@ -10,7 +10,7 @@ android {
 
     productFlavors {
         darjeeling_prd {
-            applicationIdSuffix "darjeeling.prd"
+            applicationIdSuffix ".darjeeling.prd"
             signingConfig signingConfigs.release
         }
     }

@@ -4,6 +4,7 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 apply from: 'flavor-darjeeling.gradle'
+apply from: 'flavor-assam.gradle'
 
 android {
     compileSdkVersion 28
